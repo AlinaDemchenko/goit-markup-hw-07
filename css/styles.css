@@ -752,19 +752,21 @@ ol {
   color: var(--primary-white-color);
   background-color: transparent;
   outline: transparent;
-  border: 1px solid var(--primary-white-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  opacity: 0.3;
 }
 
 .footer-form-input::placeholder {
-  color: var(--primary-white-color);
-  opacity: 0.6;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-form-input:focus {
-  opacity: 1;
+  border: 1px solid var(--primary-white-color);
+}
+
+.footer-form-input:focus::placeholder {
+  color: var(--primary-white-color);
 }
 
 .footer-form-button {
@@ -775,7 +777,7 @@ ol {
   padding: 10px 24px;
   background: var(--primary-brand-color);
   border-radius: 4px;
-  color: #ffffff;
+  color: var(--primary-white-color);
   transition: background-color var(--transition);
 }
 
