@@ -1029,7 +1029,7 @@ ol {
   display: inline-block;
   margin: 0 auto;
   padding: 72px 16px 24px;
-  height: 584px;
+  min-height: 584px;
   width: 392px;
   background-color: var(--modal-background);
   border-radius: 4px;
@@ -1181,6 +1181,16 @@ ol {
 .order-check-label {
   display: flex;
   align-items: center;
+}
+
+@media only screen and (max-width: 392px) {
+  .modal {
+    width: 320px;
+  }
+  .order-check-label {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 .order-privacy-link {
