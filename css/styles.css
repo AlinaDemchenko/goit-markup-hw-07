@@ -158,7 +158,7 @@ ol {
   background-color: transparent;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767.98px) {
   .logo {
     margin-right: auto;
   }
@@ -205,7 +205,7 @@ ol {
     border-radius: 2px;
     background: var(--pressed-state-color);
 
-    transform: translateY(20px);
+    transform: translateY(21px);
   }
   .contacts-link {
     font-size: 12px;
@@ -746,18 +746,25 @@ ol {
   width: 100%;
   height: 40px;
   padding: 0 16px;
-  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  line-height: 2em;
+  color: var(--primary-white-color);
   background-color: transparent;
   outline: transparent;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--primary-white-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  opacity: 0.3;
 }
 
 .footer-form-input::placeholder {
-  line-height: 2px;
-  letter-spacing: 0.04em;
   color: var(--primary-white-color);
+  opacity: 0.6;
+}
+
+.footer-form-input:focus {
+  opacity: 1;
 }
 
 .footer-form-button {
