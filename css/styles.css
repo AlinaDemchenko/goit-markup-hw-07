@@ -774,7 +774,7 @@ ol {
   align-items: flex-start;
   width: 165px;
   height: 40px;
-  padding: 10px 24px;
+  padding: 8px 24px;
   background: var(--primary-brand-color);
   border-radius: 4px;
   color: var(--primary-white-color);
